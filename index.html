@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio Revisao</title>
+</head>
+<body>
+    <div class="body">
+        <form action="" class="container">
+            <label for="nome">Nome do Cliente:</label>
+            <input type="text" class="campo obrigatorioT" id="nome" placeholder="Digite seu nome...">
+            <label for="senha">Senha do Cliente:</label>
+            <input type="password" class="campo obrigatorioT" id="senha"  placeholder="Digite sua senha...">
+
+            <label for="">Serviços Desejados</label>
+            <div class="container2">
+                <div class="serv">
+                    <input type="checkbox" name="opcao" id="serv1">
+                    <label for="serv1">Troca de Óleo</label>
+                </div>
+                <div class="serv">
+                    <input type="checkbox" name="opcao" id="serv2">
+                    <label for="serv2">Alinhamento</label>
+                </div>
+                <div class="serv">
+                    <input type="checkbox" name="opcao" id="serv3">
+                    <label for="serv3">Balanceamento</label>
+                </div>
+                <div class="serv">
+                    <input type="checkbox" name="opcao" id="serv4">
+                    <label for="serv4">Revisão Geral</label>
+                </div>
+            </div>
+
+            <label for="">Tipo de Veículo:</label>
+            <div class="container2">
+                <div class="serv">
+                    <input type="radio" name="tipo" id="carro">
+                    <label for="carro">Carro</label>
+                </div>
+                <div class="serv">
+                    <input type="radio" name="tipo" id="moto">
+                    <label for="moto">Moto</label>
+                </div>
+            </div>
+
+            <label for="">Modelo do Veículo:</label>
+            <select class="obrigatorioS">
+                <option value="" disabled selected>Selecione um modelo</option>
+                <option value="1">Modelo 1</option>
+                <option value="2">Modelo 2</option>
+                <option value="3">Modelo 3</option>
+            </select>
+
+            <label for="mensagem">Observações</label>
+            <textarea id="mensagem" rows="5" placeholder="Digite observações sobre o veículo..."></textarea>
+
+            <div class="container2">
+                <button id="agendar">Agendar Serviço</button>
+                <button id="cancelar">Cancelar Serviço</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
